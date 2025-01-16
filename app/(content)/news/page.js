@@ -5,7 +5,7 @@ export default async function NewsPage() {
 
     const news = await getAllNews();
     return <>
-    <h1>News Page</h1>
+    <h1 className='news-header'>News Page</h1>
         <NewsList news={news}/>
     </>
 }

@@ -34,8 +34,7 @@ ul {
 }
 
 #logo {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 4px;
 }
 
@@ -47,14 +46,14 @@ ul {
 
 #main-header ul {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   font-weight: bold;
 }
 
 #main-header ul a {
   text-decoration: none;
   color: #e5e5e1;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-radius: 4px;
 }
 
@@ -155,6 +154,10 @@ ul {
   line-height: 1.8;
 }
 
+.news-header {
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 768px) {
   #home {
     max-width: 60rem;
@@ -168,6 +171,22 @@ ul {
 
   .news-article {
     font-size: 1.2rem;
+  }
+
+  #main-header ul {
+    gap: 2rem;
+  }
+
+  #main-header ul a {
+    padding: 0.5rem 1rem;
+  }
+
+  #logo {
+    font-size: 1.5rem;
+  }
+
+  .news-header {
+    font-size: 1.5rem;
   }
 }
 
