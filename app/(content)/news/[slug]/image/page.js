@@ -2,9 +2,9 @@ import { getNews } from '@/lib/news';
 import {notFound} from 'next/navigation'
 
 export default async function ImagePage({params}) {
-    const newsItemSlug = params.slug;
+    const { slug: newsSlug } = await params;
 
-    const newsItem = await getNews(newsItemSlug);
+    const newsItem = await getNews(newsSlug);
    
     if (!newsItem) {
         notFound();

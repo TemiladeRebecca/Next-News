@@ -3,9 +3,10 @@ import {notFound} from 'next/navigation';
 import Link from 'next/link';
 
 
-export default function NewsDetailPage({params}) {
-    const newsSlug = params.slug;
-    const newsItem = getNews(newsSlug);
+export default async function NewsDetailPage({params}) {
+    const { slug: newsSlug } = await params;
+    
+    const newsItem = await getNews(newsSlug);
    
     if (!newsItem) {
         notFound();

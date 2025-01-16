@@ -4,7 +4,9 @@ import ModalBackdrop from '@/components/ModalBackdrop';
 
 export default async function InterceptedImagePage({params}) {
 
-    const newsItem = await getNews(params.slug);
+    const { slug: newsSlug } = await params;
+
+    const newsItem = await getNews(newsSlug);
    
     if (!newsItem) {
         notFound();

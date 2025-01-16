@@ -66,10 +66,7 @@ ul {
 
 #home {
   margin: 3rem auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 45rem;
   text-align: center;
   padding: 0 1rem;
 }
@@ -83,12 +80,6 @@ ul {
 #home h1 {
   margin-top: 3rem;
   font-size: 2.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  #home {
-    max-width: 50rem;
-  }
 }
 
 #home p {
@@ -154,9 +145,24 @@ ul {
 }
 
 .news-article img {
-  width: 7rem;
+  width: 10rem;
   margin-bottom: 1rem;
   border-radius: 4px;
+}
+
+.news-article p {
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 768px) {
+  #home {
+    max-width: 60rem;
+    padding: 0;
+  }
+
+  .news-article {
+    font-size: 1.2rem;
+  }
 }
 
 .modal {
