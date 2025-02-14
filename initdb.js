@@ -1,6 +1,6 @@
 //
 import sql from 'better-sqlite3';
-const db = sql('news.db');
+const db = sql('./public/news.db');
 
 const DUMMY_NEWS = [
     {
@@ -39,6 +39,20 @@ const DUMMY_NEWS = [
       date: '2024-03-01',
       content: 'Cooking together is a great way to spend more time with your partner. It is fun and you get to eat something delicious afterwards. What are you waiting for? Get cooking!',
     },
+    {
+      slug: 'smiling-baby',
+      title: 'The magic of a smiling baby',
+      image: 'baby.jpg',
+      date: '2025-02-14',
+      content: 'A baby smiling is more than just adorable. It is a universal symbol of joy and innocence. Studies show that a smiling baby can trigger happiness in adults, creating a deep emotional bond. It is a natural wonder that brings warmth to the heart, reminding us of the purest joys in life. No wonder we cannot help but smile back!',
+    },
+    {
+      slug: 'family',
+      title: 'The heart of the table',
+      image: 'family.jpg',
+      date: '2025-02-14',
+      content: 'A meal is more than just food on a plate. Tt is a moment of connection, laughter, and love. Around the table, families share stories, celebrate wins, and support one another through challenges in life. It is a reminder that no one is truly alone. Whether it is a simple home-cooked dinner or a special feast, the act of sharing a meal strengthens bonds and creates lasting memories. In a world that moves fast, the dinner table remains a place where love, togetherness, and belonging thrive.',
+    },
   ];
 
   db.prepare(`
@@ -54,7 +68,7 @@ const DUMMY_NEWS = [
 
 async function initData() {
     const stmt = db.prepare(`
-        INSERT INTO news VALUES (
+        INSERT OR IGNORE INTO news VALUES (
         null,
         @slug,
         @title,
