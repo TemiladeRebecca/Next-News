@@ -51,7 +51,14 @@ const DUMMY_NEWS = [
       title: 'The heart of the table',
       image: 'family.jpg',
       date: '2025-02-14',
-      content: 'A meal is more than just food on a plate. Tt is a moment of connection, laughter, and love. Around the table, families share stories, celebrate wins, and support one another through challenges in life. It is a reminder that no one is truly alone. Whether it is a simple home-cooked dinner or a special feast, the act of sharing a meal strengthens bonds and creates lasting memories. In a world that moves fast, the dinner table remains a place where love, togetherness, and belonging thrive.',
+      content: 'A meal is more than just food on a plate. It is a moment of connection, laughter, and love. Around the table, families share stories, celebrate wins, and support one another through challenges in life. It is a reminder that no one is truly alone. Whether it is a simple home-cooked dinner or a special feast, the act of sharing a meal strengthens bonds and creates lasting memories. In a world that moves fast, the dinner table remains a place where love, togetherness, and belonging thrive.',
+    },
+    {
+      slug: 'dogs-love',
+      title: 'The True Definition of Friendship',
+      image: 'dogs-love.jpg',
+      date: '2025-02-14',
+      content: 'There is a reason why dogs are called our best friend as humans . Their loyalty, love, and companionship are unmatched. A golden retriever sitting beside its owner, eyes filled with warmth, is more than just a pet; it is a lifelong companion, a source of comfort, and a reminder that unconditional love exists. Dogs do not judge, they do not hold grudges, and they are always excited to see you, whether it has been five minutes or five hours. They listen when words fail, offer a paw when you are feeling down, and celebrate even the smallest moments of joy with you. In a world that moves fast, where relationships come and go, a dog remains constant, a friend for life.',
     },
   ];
 
